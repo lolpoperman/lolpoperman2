@@ -8,45 +8,45 @@ body {
 
 #centeredText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center; /* Corrected text alignment */
+    text-align: center; 
     padding: 1px 2px;
     font-size: 50px;
     font-weight: bolder;
-    justify-content: center; /* These will work with flex */
+    justify-content: center; 
     align-items: center;
     z-index: 10; 
     color: rgb(0, 0, 0); 
-    margin-top: 0; /* Adjust this if needed */
+    margin-top: 0; 
     display: flex;
     position: fixed;
-    top: 2%; /* Center vertically */
-    left: 2%; /* Center horizontally */
-    transform: translate(-109, -11%); /* Center the div exactly in the middle */
+    top: 2%; 
+    left: 2%; 
+    transform: translate(-109, -11%); 
 }
 
 #notcenteredText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center; /* Corrected text alignment */
+    text-align: center; 
     padding: 1px 2px;
     font-size: 30px;
     font-weight: bolder;
-    justify-content: center; /* These will work with flex */
+    justify-content: center; 
     align-items: center;
     z-index: 10; 
     color: rgb(0, 0, 0); 
-    margin-top: 0; /* Adjust this if needed */
+    margin-top: 0; 
     display: flex;
     position: fixed;
-    top: 7%; /* Center vertically */
-    left: 2%; /* Center horizontally */
-    transform: translate(-109, -11%); /* Center the div exactly in the middle */
-    cursor: pointer; /* Change the cursor to indicate it's interactive */
-    transition: color 0.5s ease-in-out, visibility 0s 0.5s; /* Add visibility transition */
+    top: 7%; 
+    left: 2%; 
+    transform: translate(-109, -11%); 
+    cursor: pointer; 
+    transition: color 0.5s ease-in-out, visibility 0s 0.5s; 
 }
 
 #notcenteredText:hover {
-    color: transparent; /* Hide the original text color on hover */
-    visibility: visible; /* Ensure visibility is maintained */
+    color: transparent; 
+    visibility: visible; 
 }
 
 #notcenteredText:hover::after {
@@ -54,10 +54,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    color: rgb(0, 0, 0); /* Set the text color to whatever you want */
-    opacity: 1; /* Ensure it starts fully visible */
-    visibility: visible; /* Make it visible on hover */
-    transition: opacity 0.5s ease-in-out; /* Increased duration for opacity */
+    color: rgb(0, 0, 0); 
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 0.5s ease-in-out; 
 }
 
 #notcenteredText::after {
@@ -65,26 +65,24 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    color: rgb(0, 0, 0); /* Set the text color */
-    opacity: 0; /* Start invisible */
-    visibility: hidden; /* Hide initially */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    color: rgb(0, 0, 0); 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.5s ease-in-out; 
 }
 
 #notcenteredText:hover::after {
-    visibility: visible; /* Make the new text visible */
-    opacity: 1; /* Show the new text */
+    visibility: visible; 
+    opacity: 1; 
 }
 
 .buttons {
     margin-top: 120px;
-
 }
 
 div {
     display: block;
     unicode-bidi: isolate;
-
 }
 
 a {
@@ -96,13 +94,10 @@ a {
     color: #fff;
     text-decoration: none;
     border-radius: 1vh;
-
+    transition: all 0.4s ease; 
 }
 
 a:hover {
     background-color: #35699b;
-    padding: 2vh 3vh;
-    margin-top: 14px;
-    transition: all 0.4s ease;
+    transform: translateY(-4px); 
 }
-
